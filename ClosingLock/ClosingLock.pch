@@ -1,0 +1,38 @@
+//
+//  ClosingLock.pch
+//  ClosingLock
+//
+//  Created by nieyu on 15/7/16.
+//  Copyright (c) 2015年 nieyu. All rights reserved.
+//
+
+#ifndef ClosingLock_ClosingLock_pch
+#define ClosingLock_ClosingLock_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef DEBUG
+#    define DLog(...)           NSLog(__VA_ARGS__)
+#else
+#    define DLog(...)           /* */
+#endif
+
+#define NEEDBUG                 /* */
+
+#ifdef  NEEDBUG
+#       define MLog(...)        NSLog(__VA_ARGS__)
+#else
+#       define MLog(...)
+#endif
+#define ALog(...)               NSLog(__VA_ARGS__)
+
+#define IOS_8                   (([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)? (YES):(NO))
+#define SCREEN_HEIGHT           [UIScreen mainScreen].bounds.size.height
+#define SCREEN_WIDTH            [UIScreen mainScreen].bounds.size.width
+
+
+#import "BasicViewController.h"
+#import "UIControl+NYUIButton.h"
+
+#endif
