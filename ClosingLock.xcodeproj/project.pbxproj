@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		511FFAB61B58B6CA00F8F8A3 /* QuestionMarkImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 511FFAB51B58B6CA00F8F8A3 /* QuestionMarkImage.m */; };
 		512F12011B57A90800996345 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 512F12001B57A90800996345 /* HomeViewController.m */; };
 		512F12041B57AB0B00996345 /* BasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 512F12031B57AB0B00996345 /* BasicViewController.m */; };
 		512F12091B57BDAF00996345 /* GradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 512F12081B57BDAF00996345 /* GradientView.m */; };
@@ -16,6 +17,7 @@
 		518535961B56786E00ADD7DA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 518535941B56786E00ADD7DA /* LaunchScreen.xib */; };
 		518535A21B56786E00ADD7DA /* ClosingLockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 518535A11B56786E00ADD7DA /* ClosingLockTests.m */; };
 		518535B01B56932C00ADD7DA /* location@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 518535AF1B56932C00ADD7DA /* location@3x.png */; };
+		51D367161B592F1400207DE7 /* StyleKitName.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D367151B592F1400207DE7 /* StyleKitName.m */; };
 		51DDB3C51B57F8DE006941E7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 512F120B1B57F87200996345 /* QuartzCore.framework */; };
 		51DDB3CB1B58010C006941E7 /* NavigationBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 51DDB3CA1B58010C006941E7 /* NavigationBarView.m */; };
 		51DDB3CE1B58011B006941E7 /* ButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 51DDB3CD1B58011B006941E7 /* ButtonView.m */; };
@@ -33,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		511FFAB41B58B6CA00F8F8A3 /* QuestionMarkImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionMarkImage.h; sourceTree = "<group>"; };
+		511FFAB51B58B6CA00F8F8A3 /* QuestionMarkImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionMarkImage.m; sourceTree = "<group>"; };
 		512F11FF1B57A90800996345 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		512F12001B57A90800996345 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		512F12021B57AB0B00996345 /* BasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicViewController.h; sourceTree = "<group>"; };
@@ -52,6 +56,8 @@
 		518535A01B56786E00ADD7DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		518535A11B56786E00ADD7DA /* ClosingLockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClosingLockTests.m; sourceTree = "<group>"; };
 		518535AF1B56932C00ADD7DA /* location@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "location@3x.png"; sourceTree = "<group>"; };
+		51D367141B592F1400207DE7 /* StyleKitName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StyleKitName.h; sourceTree = "<group>"; };
+		51D367151B592F1400207DE7 /* StyleKitName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StyleKitName.m; sourceTree = "<group>"; };
 		51DDB3C91B58010C006941E7 /* NavigationBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationBarView.h; sourceTree = "<group>"; };
 		51DDB3CA1B58010C006941E7 /* NavigationBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationBarView.m; sourceTree = "<group>"; };
 		51DDB3CC1B58011B006941E7 /* ButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonView.h; sourceTree = "<group>"; };
@@ -79,6 +85,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		511FFAB31B58B65300F8F8A3 /* BezierView */ = {
+			isa = PBXGroup;
+			children = (
+				511FFAB41B58B6CA00F8F8A3 /* QuestionMarkImage.h */,
+				511FFAB51B58B6CA00F8F8A3 /* QuestionMarkImage.m */,
+				51D367141B592F1400207DE7 /* StyleKitName.h */,
+				51D367151B592F1400207DE7 /* StyleKitName.m */,
+			);
+			name = BezierView;
+			sourceTree = "<group>";
+		};
 		512F12051B57AB9A00996345 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +196,7 @@
 		51DDB3C61B580087006941E7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				511FFAB31B58B65300F8F8A3 /* BezierView */,
 				51DDB3CC1B58011B006941E7 /* ButtonView.h */,
 				51DDB3CD1B58011B006941E7 /* ButtonView.m */,
 				512F12071B57BDAF00996345 /* GradientView.h */,
@@ -310,11 +328,13 @@
 				512F12091B57BDAF00996345 /* GradientView.m in Sources */,
 				5185358B1B56786E00ADD7DA /* AppDelegate.m in Sources */,
 				512F12041B57AB0B00996345 /* BasicViewController.m in Sources */,
+				51D367161B592F1400207DE7 /* StyleKitName.m in Sources */,
 				518535881B56786E00ADD7DA /* main.m in Sources */,
 				51DDB3D81B5806CB006941E7 /* UIControl+NYUIButton.m in Sources */,
 				51DDB3CE1B58011B006941E7 /* ButtonView.m in Sources */,
 				51DDB3CB1B58010C006941E7 /* NavigationBarView.m in Sources */,
 				512F12011B57A90800996345 /* HomeViewController.m in Sources */,
+				511FFAB61B58B6CA00F8F8A3 /* QuestionMarkImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

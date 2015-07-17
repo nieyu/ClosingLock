@@ -1,4 +1,4 @@
-//
+ //
 //  HomeViewController.m
 //  ClosingLock
 //
@@ -7,6 +7,8 @@
 //
 
 #import "HomeViewController.h"
+#import "ButtonView.h"
+#import "QuestionMarkImage.h"
 
 @interface HomeViewController ()
 
@@ -16,12 +18,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(20, 40, 100, 100)];
-    [button setBackgroundColor:[UIColor blackColor]];
-    [button handleControlWithUIControl:UIControlEventTouchUpInside withBlock:^(id sender) {
-        NSLog(@"abc");
+    
+    ButtonView *buttonView = [[ButtonView alloc] initButtonViewWithFrame:CGRectMake(20, 200, 60, 60)
+                                                               withTitle:@"abc"
+                                                               withImage:nil
+                                                              withRadius:0];
+    [buttonView setBackgroundColor:[UIColor clearColor]];
+    [buttonView setType:NYClear];
+    [buttonView handlevControlWithUIControl:UIControlEventTouchUpInside withBlock:^(id sender) {
+        DLog(@"efg");
     }];
-    [self.view addSubview:button];
+    QuestionMarkImage *image = [[QuestionMarkImage alloc] initWithFrame:buttonView.bounds];
+    [image setShapeColor:[UIColor greenColor]];
+    [buttonView addSubview:image];
+    [buttonView bringSubviewToFront:image];
+    [self.view addSubview:buttonView];
+    [self.view setNeedsDisplay];
 }
 
 - (void)dealloc {

@@ -30,7 +30,11 @@
 #define IOS_8                   (([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)? (YES):(NO))
 #define SCREEN_HEIGHT           [UIScreen mainScreen].bounds.size.height
 #define SCREEN_WIDTH            [UIScreen mainScreen].bounds.size.width
+#define CURRENT_SYS_VERSION     [[[UIDevice currentDevice] systemVersion] floatValue]
 
+// block self
+#define WEAKSELF                typeof(self) __weak weakSelf = self;
+#define STRONGSELF              typeof(weakSelf) __strong strongSelf = weakSelf;
 
 #import "BasicViewController.h"
 #import "UIControl+NYUIButton.h"
